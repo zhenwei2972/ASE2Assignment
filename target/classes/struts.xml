@@ -11,6 +11,16 @@
         <action name="index">
             <result>/index.jsp</result>
         </action>
+
+        <!-- please add in login action
+        <action name = "loginaction" 
+         class = "com.tutorialspoint.struts2.LoginAction"
+         method = "execute">
+         <result name = "success">/success.jsp</result>
+         <result name = "error">/error.jsp</result>
+      </action>*/
+      -->
+
     </package>
 
 </struts>
