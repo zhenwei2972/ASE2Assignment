@@ -7,6 +7,6 @@
    </head>
    
    <body>
-      Hello World, <s:property value = "name"/>
+      Great Job! Successful Login <s:property value = "name"/>
    </body>
 </html>
