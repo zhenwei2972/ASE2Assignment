@@ -7,7 +7,7 @@
       <html lang="en">
 
       <head>
-         <title>Login</title>
+         <title>Login Page</title>
          <style>
             * {
                margin: 0;
@@ -17,14 +17,14 @@
 
             body {
                min-height: 100vh;
-               background: #eee;
+               background: rgb(180, 180, 180);
                display: flex;
                font-family: sans-serif;
             }
 
             .container {
                margin: auto;
-               width: 500px;
+               width: 600px;
                max-width: 90%;
             }
 
@@ -69,10 +69,14 @@
                height: 34px;
                border: none;
                outline: none;
-               font-size: 16px;
                text-transform: uppercase;
-               border-radius: 4px;
+               border-radius: 12px;
                transition: .3s;
+               background-color: royalblue;
+               border: none;
+               color: white;
+               font-size: 20px;
+               cursor: pointer;
             }
          </style>
       </head>
@@ -80,13 +84,13 @@
       <body>
          <div class="container">
             <s:form action="loginaction">
-               <h2>Login Here</h2>
+               <h2>Sign In</h2>
                <div class="form-group">
-                  <label for="user">User: </label>
-                  <s:textfield name="user" class="form-control" />
+                  <label for="user">Username: </label>
+                  <s:textfield name="user" class="form-control" placeholder="Enter Username" />
                   <label for="password">Password: </label>
-                  <s:password name="password" class="form-control" />
-                  <s:submit value="submit" class="btn" />
+                  <s:password name="password" class="form-control" placeholder="Enter Password" />
+                  <s:submit value="Sign In" class="btn" />
                </div>
             </s:form>
          </div>
