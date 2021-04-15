@@ -13,8 +13,8 @@ public class PersonService {
     String ret = "ERROR";
     Connection conn = null;
     String name;
-    String USERNAME = "root";
-    String PASSWORD = "Ase123456";
+    String USERNAME = "user";
+    String PASSWORD = "password";
     String mainURL = "jdbc:mysql://localhost/?useSSL=false&allowPublicKeyRetrieval=true";
 
     public String getName(String user, String password, Person personBean) {
@@ -74,7 +74,7 @@ public class PersonService {
 
             try{
                 String defaultUser = "INSERT INTO `ase_assignment2`.`useraccounts` (`user`, `password`, `name`)" +
-                                    "VALUES ('admin', 'password', 'Group 66');";
+                                    "VALUES ('admin', 'password', 'Group 54');";
                 stmt.executeUpdate(defaultUser);
             }
             catch(Exception e){

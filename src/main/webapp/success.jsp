@@ -7,22 +7,31 @@
       <head>
          <title>Successful Login</title>
          <style>
-            .center {
+            * {
                margin: 0;
-               position: absolute;
-               top: 50%;
-               left: 50%;
-               -ms-transform: translate(-50%, -50%);
-               transform: translate(-50%, -50%);
-               font-family: sans-serif;
-               font-size: 20px;
+               padding: 0;
+               box-sizing: border-box;
+            }
+
+            body {
+               background-color: #F3EBF6;
+               font-family: 'Ubuntu', sans-serif;
+            }
+
+            .center {
+               background-color: #FFFFFF;
+               width: 400px;
+               height: 200px;
+               margin: 7em auto;
+               border-radius: 1.5em;
+               box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
             }
          </style>
       </head>
 
 
       <body class="center">
-         <h2>SUCCESSFULLY SIGNED IN
+         <h2 align="center">SUCCESSFULLY SIGNED IN
             <s:property value="personBean.name" />!
          </h2>
       </body>

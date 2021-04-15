@@ -7,7 +7,7 @@
       <html lang="en">
 
       <head>
-         <title>Login</title>
+         <title>Login Page</title>
          <style>
             * {
                margin: 0;
@@ -16,32 +16,77 @@
             }
 
             body {
-               min-height: 100vh;
-               background: rgb(180, 180, 180);
-               display: flex;
-               font-family: sans-serif;
+               background-color: #F3EBF6;
+               font-family: 'Ubuntu', sans-serif;
             }
 
             .container {
-               margin: auto;
-               width: 600px;
-               max-width: 90%;
+               background-color: #FFFFFF;
+               width: 400px;
+               height: 400px;
+               margin: 7em auto;
+               border-radius: 1.5em;
+               box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
             }
 
             .container form {
-               width: 100%;
-               height: 100%;
-               padding: 20px;
-               background: white;
-               border-radius: 4px;
-               box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
-               font-size: x-large;
+               padding-top: 40px;
+
             }
 
-            .container form h2 {
+            .container h2 {
+               padding-top: 40px;
+               color: #8C55AA;
+               font-family: 'Ubuntu', sans-serif;
+               font-weight: bold;
+               font-size: 23px;
+            }
+
+            label {
+               float: left;
+               text-align: right;
+               margin: 1px 0 30px 0;
+            }
+
+            .container form .form-control {
+               width: 76%;
+               color: rgb(38, 50, 56);
+               font-weight: 700;
+               font-size: 14px;
+               letter-spacing: 1px;
+               background: rgba(136, 126, 126, 0.04);
+               padding: 10px 20px;
+               border: none;
+               border-radius: 20px;
+               outline: none;
+               box-sizing: border-box;
+               border: 2px solid rgba(0, 0, 0, 0.02);
+               margin-bottom: 50px;
+               margin-left: 46px;
                text-align: center;
-               margin-bottom: 24px;
-               color: #222;
+               margin-bottom: 27px;
+               font-family: 'Ubuntu', sans-serif;
+            }
+
+            .container form .form-control:focus {
+               border: 2px solid rgba(0, 0, 0, 0.18) !important;
+
+            }
+
+            .container form .btn {
+               cursor: pointer;
+               border-radius: 5em;
+               color: #fff;
+               background: linear-gradient(to right, #9C27B0, #E040FB);
+               border: 0;
+               padding-left: 40px;
+               padding-right: 40px;
+               padding-bottom: 10px;
+               padding-top: 10px;
+               font-family: 'Ubuntu', sans-serif;
+               margin-left: 35%;
+               font-size: 13px;
+               box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
             }
 
             .container form p {
@@ -53,59 +98,22 @@
                margin-bottom: 5px;
                font-size: 20px;
             }
-
-            label {
-               float: left;
-               text-align: right;
-               margin: 1px 0 30px 0;
-            }
-
-            .container form .form-control {
-               float: right;
-               width: 70%;
-               height: 40px;
-               font-size: 16px;
-               background: white;
-               border-radius: 4px;
-               border: 1px solid silver;
-               margin: 1px 0 18px 0;
-               padding: 0 10px;
-            }
-
-            .container form .btn {
-               margin-left: 50%;
-               transform: translateX(-50%);
-               width: 120px;
-               height: 34px;
-               border: none;
-               outline: none;
-               font-size: 16px;
-               text-transform: uppercase;
-               border-radius: 12px;
-               transition: .3s;
-               background-color: royalblue;
-               border: none;
-               color: white;
-               font-size: 20px;
-               cursor: pointer;
-            }
          </style>
       </head>
 
       <body>
          <div class="container">
+            <h2 align="center">Sign In</h2>
             <s:form action="loginaction">
-               <h2>Sign In</h2>
                <div class="form-group">
-                  <label for="user">Username: </label>
-                  <s:textfield name="user" class="form-control" placeholder="Enter Username" />
-                  <label for="password">Password: </label>
-                  <s:password name="password" class="form-control" placeholder="Enter Password" />
+                  <s:textfield name="user" class="form-control" align="center" placeholder="Enter Username" />
+                  <s:password name="password" class="form-control" align="center" placeholder="Enter Password" />
                   <s:submit value="Sign In" class="btn" />
                </div>
                <p>SIGN IN FAILED</p>
                <p>Please try to sign in again!</p>
             </s:form>
+
          </div>
       </body>
 
