@@ -2,7 +2,7 @@ package org.apache.struts.simplelogin.model;
 
 /**
  * Models a user that exist in the local MySql database
- * @author Group 66
+ * @author Group 54
  */
 public class Person {
     private String name;
